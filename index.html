@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z&Z Excellence</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #004080; color: white; text-align: center; padding: 20px; }
+        nav { background: #f4f4f4; padding: 10px; text-align: center; }
+        nav a { margin: 0 15px; text-decoration: none; color: #004080; font-weight: bold; }
+        section { padding: 20px; }
+        footer { background: #004080; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+        form { max-width: 400px; margin: auto; }
+        input, textarea, button { width: 100%; padding: 10px; margin-top: 10px; }
+    </style>
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            alert(`Ďakujeme ${name}, vaša správa bola odoslaná!`);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Z&Z Excellence</h1>
+        <p>Precíznosť a spoľahlivosť v každom detaile</p>
+    </header>
+    <nav>
+        <a href="#onas">O nás</a>
+        <a href="#sluzby">Služby</a>
+        <a href="#referencie">Referencie</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+    <section id="onas">
+        <h2>O nás</h2>
+        <p>Na potreby klientov reagujeme rýchlo a flexibilne, pričom kladieme dôraz na ich spokojnosť a splnenie stanovených kritérií. Výber vhodných kandidátov realizujeme na základe presných požiadaviek klienta. Zabezpečujeme rýchle obsadenie požadovanej pozície kvalifikovaným uchádzačom. Zabezpečujeme adekvátnu personálnu náhradu pri krátkodobých výpadkoch kmeňových zamestnancov. Poskytujeme riešenia na zvládnutie nadmernej fluktuácie a nedostatku kvalifikovanej pracovnej sily. Sme ideálnym partnerom pre spoločnosti, ktoré potrebujú rýchlo a spoľahlivo obsadiť dočasne uvoľnené alebo novo vytvorené pracovné pozície. Poskytujeme komplexné riešenia v oblasti kontroly kvality dielov a komponentov, prispôsobené špecifickým požiadavkám klienta.</p>
+    </section>
+    <section id="sluzby">
+        <h2>Naše služby</h2>
+        <ul>
+            <li>Dodávka operátorov do výroby</li>
+            <li>Kontrola kvality dielov</li>
+            <li>Školenie a adaptácia pracovníkov</li>
+        </ul>
+    </section>
+    <section id="referencie">
+        <h2>Referencie</h2>
+        <p>Spokojní klienti, ktorí využili naše služby.</p>
+    </section>
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Adresa: Dubodiel 419</p>
+        <p>Telefón: 0911430295</p>
+        <p>Email: info@zandzexcellence.sk</p>
+        <h3>Pošlite nám správu</h3>
+        <form onsubmit="submitForm(event)">
+            <input type="text" id="name" placeholder="Vaše meno" required>
+            <input type="email" id="email" placeholder="Váš email" required>
+            <textarea id="message" placeholder="Vaša správa" required></textarea>
+            <button type="submit">Odoslať</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 Z&Z Excellence. Všetky práva vyhradené.</p>
+    </footer>
+</body>
+</html>
